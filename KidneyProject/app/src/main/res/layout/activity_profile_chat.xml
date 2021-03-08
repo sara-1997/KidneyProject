@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/layout"
+    android:background="@color/white"
+    tools:context=".ProfileChatActivity"
+
+
+    >
+
+    <Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/green">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+                android:onClick="back"
+
+                />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/font"
+                android:padding="10dp"
+                android:text="User Name"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+
+
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </Toolbar>
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@id/toolbar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:clickable="true"
+
+        android:onClick="SaveImage"
+        android:layout_margin="10dp"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@android:color/black"
+        android:id="@+id/image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:src="@drawable/patient" />
+
+
+    <View
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/green"
+        ></View>
+
+
+
+
+
+
+    <Button
+        android:layout_below="@id/image"
+        android:onClick="Chat"
+
+        android:id="@+id/chat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/orange"
+        android:fontFamily="@font/font"
+        android:text="Go to chat"
+        android:layout_centerVertical="true"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_marginTop="100dp"
+
+        />
+
+</RelativeLayout>
+
+

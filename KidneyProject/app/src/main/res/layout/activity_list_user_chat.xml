@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".ListVisitActivity"
+    >
+    <Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/green">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:onClick="back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="78dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/font"
+                android:padding="10dp"
+                android:text="List of User"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+
+
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>

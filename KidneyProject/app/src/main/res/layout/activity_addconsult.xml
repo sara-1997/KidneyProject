@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddconsultActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/green">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+
+                android:padding="10dp"
+                android:text="Add Consult"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+                android:onClick="back"
+
+                />
+
+        </RelativeLayout>
+    </Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consult title"
+            android:textColor="@color/blackTextColor"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/font"
+            android:focusableInTouchMode="false"
+
+
+            ></TextView>
+        <EditText
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:id="@+id/Wishtitle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/sequare"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:gravity=""
+            android:layout_marginBottom="20dp"
+
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/blackTextColor"
+            android:textColorHint="@color/white"
+            android:hint="Wish Title"
+
+            android:paddingLeft="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/blackTextColor"
+                android:textSize="26sp"
+                android:fontFamily="@font/font"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+
+                ></TextView>
+            <EditText
+
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:id="@+id/Description"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sequare"
+                android:orientation="horizontal"
+                android:hint="Description"
+                android:textColor="@color/blackTextColor"
+                android:textColorHint="@color/blackTextColor"
+                android:textStyle="bold"
+                >
+
+            </EditText>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <!-- Login Button -->
+
+
+    <!-- Link to Login Screen -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@color/orange"
+        android:fontFamily="@font/font"
+        android:text="Add Consult "
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+
+        android:onClick="Addconsult"
+
+        />
+
+</RelativeLayout>

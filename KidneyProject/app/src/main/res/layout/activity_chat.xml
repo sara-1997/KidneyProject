@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".ChatActivity"
+    >
+    <Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/green">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/back"
+                android:onClick="back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_toRightOf="@id/back"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/photo"
+                android:layout_margin="10dp"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@android:color/black"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/wish"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="78dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/font"
+                android:padding="10dp"
+                android:id="@+id/title"
+                android:text="Name User"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+
+
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@id/rela"
+
+
+
+
+        />
+
+   <RelativeLayout
+       android:layout_alignParentBottom="true"
+
+       android:id="@+id/rela"
+       android:padding="10dp"
+       android:background="@android:color/white"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <EditText
+
+           android:padding="10dp"
+           android:layout_toLeftOf="@id/button"
+           android:id="@+id/textsend"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColorHint="@color/blackTextColor"
+           android:background="@drawable/sequare"
+           android:textColor="@color/blackTextColor"
+           android:hint="Type Message"
+           ></EditText>
+       <ImageView
+
+           android:id="@+id/button"
+           android:onClick="Send"
+           android:src="@drawable/ic_send_black_24dp"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_alignParentEnd="true"
+
+
+           android:layout_alignParentRight="true">
+
+       </ImageView>
+
+   </RelativeLayout>
+</RelativeLayout>

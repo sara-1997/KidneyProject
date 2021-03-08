@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@android:color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/sequare"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/photo"
+                android:layout_margin="10dp"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@android:color/black"
+                android:scaleType="centerCrop"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/wish"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearName"
+                android:layout_toRightOf="@+id/photo"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ntextnameme"
+                    android:layout_toRightOf="@+id/photo"
+                    android:layout_alignParentTop="true"
+                    android:textSize="20sp"
+                    android:text="Talent Title :"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/blackTextColor"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:textSize="20sp"
+                    android:text="Wish Title :"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearTime"
+                android:layout_below="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desText"
+                    android:textSize="20sp"
+                    android:text="Image:"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/blackTextColor"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ImageTalent"
+                    android:textSize="20sp"
+                    android:background="@drawable/sequare"
+
+                    android:src="@drawable/talent"
+                    android:text="Description"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearData"
+                android:layout_below="@id/linearTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/Like"
+                    android:textSize="20sp"
+                    android:text="Date:"
+                    android:src="@drawable/heartnotlike"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/numberlike"
+                    android:layout_toRightOf="@+id/photo"
+                    android:layout_alignParentTop="true"
+                    android:textSize="20sp"
+                    android:text="Like:"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/blackTextColor"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_profile"
+
+        app:showAsAction="always"
+        android:icon="@drawable/patient"
+
+        android:title="Profile">
+    </item>
+    <item
+        android:id="@+id/action_location"
+        android:icon="@drawable/location"
+        app:showAsAction="always"
+        android:title="Go to Map">
+    </item>
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/logout"
+        app:showAsAction="always"
+        android:title="Log out">
+    </item>
+
+</menu>

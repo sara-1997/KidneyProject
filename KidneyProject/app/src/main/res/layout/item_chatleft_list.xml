@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+
+    >
+
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/photo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/wish"
+                />
+
+
+
+                <TextView
+                    android:layout_toRightOf="@id/photo"
+                    android:textColor="@color/blackTextColor"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/message"
+                    android:textSize="18sp"
+                    android:text=" Message "
+                    android:padding="10dp"
+                    android:background="@drawable/backgroundleft"
+                    android:fontFamily="@font/font"
+                    android:textStyle="bold"
+                    />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+

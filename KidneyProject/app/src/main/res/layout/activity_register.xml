@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:background="@android:color/white"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+    >
+
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/green"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+                android:onClick="Back"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:padding="10dp"
+
+                android:text="Register"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+    </Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/linearSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/font"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Register As:"
+            android:textColor="@color/blackTextColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+
+            >
+
+            <RadioGroup
+
+                android:id="@+id/groupradio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:buttonTint="@color/blackTextColor"
+                    android:backgroundTint="@color/green"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio1"
+                    android:text="Volunteer"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/green"
+                    />
+                <RadioButton
+                    android:buttonTint="@color/blackTextColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radio2"
+                    android:text="Patient"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font"
+                    android:textColor="@color/green"
+
+                    />
+            </RadioGroup>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:id="@+id/linearmap"
+            android:visibility="gone"
+            >
+
+
+
+            <TextView
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+                android:id="@+id/HospitalName"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:src="@drawable/location"
+                android:textColor="@color/blackTextColor"
+                android:text="Hospital Name"
+                android:gravity="center"
+                android:background="@drawable/sequare"
+                >
+
+
+            </TextView>
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/location"
+                android:onClick="GetLocation"
+                >
+
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Name:"
+                android:textColor="@color/blackTextColor"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sequare"
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Email:"
+                android:textColor="@color/blackTextColor"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/sequare"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Password:"
+                android:textColor="@color/blackTextColor"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sequare"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Confirm Password:"
+                android:textColor="@color/blackTextColor"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sequare"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Phone:"
+            android:textColor="@color/blackTextColor"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/font"
+                android:text="+966"
+                android:textColor="@color/blackTextColor"
+                android:textColorHint="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+
+                ></TextView>
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sequare"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="20sp">
+
+            </EditText>
+
+
+        </LinearLayout>
+
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/orange"
+            android:fontFamily="@font/font"
+            android:onClick="Register"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

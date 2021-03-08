@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1044287729879",
+    "firebase_url": "https://kidneyproject-82cf0.firebaseio.com",
+    "project_id": "kidneyproject-82cf0",
+    "storage_bucket": "kidneyproject-82cf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044287729879:android:25de0921f85badcc8ac092",
+        "android_client_info": {
+          "package_name": "com.example.kidneyproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044287729879-225465tde0s4u9thhqjomi9gc9c0acr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kidneyproject",
+            "certificate_hash": "61721dd364185a2ca315ba27279655ee063ef73c"
+          }
+        },
+        {
+          "client_id": "1044287729879-guaimerf82eikfq23897aes76f3cot1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBftZPAztsBUUOUn7QF8CoNadrwmZnsFp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044287729879-guaimerf82eikfq23897aes76f3cot1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
